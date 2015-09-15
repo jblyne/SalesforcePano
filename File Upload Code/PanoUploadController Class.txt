@@ -1,0 +1,32 @@
+/*
+    J. Benjamin Lyne
+    8/1/2015
+    Created this class to be used in SF1 to upload panoramic images.
+*/
+
+public with sharing class PanoUploadController {
+ 
+    public Attachment tAttachment{get;set;}
+ 
+    public PanoUploadController(){
+ 
+        this.tAttachment = new Attachment();
+    }
+ 
+    public void uploadPanoFile(){
+ 
+        // Create the file
+        Attachment a = this.tAttachment.clone(false, true, false, false);
+        a.OwnerId = UserInfo.getUserId();
+        
+        // Pano record parent id. This is just for demo purposes only. It isn't best 
+        // practice to hardcode the ID.
+        a.ParentId = 'a05o000000Z73tf';
+ 
+        // Clear it out.
+        this.tAttachment.Body = null;
+ 
+        // Actually create the attachment in Salesforce.
+        Database.Insert(a);
+    }
+}
