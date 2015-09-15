@@ -1,0 +1,5 @@
+4.6.7f1:1.9.9.0
+iPhone
+/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.7/Standalone/UnityEngine.UI.dll
+/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.7/Editor/UnityEditor.UI.dll
+/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll
