@@ -187,7 +187,7 @@ public class FileHandler : MonoBehaviour {
 		sf = gameObject.AddComponent<Salesforce>();
 		
 		username = "jblyne@gmail.com.dev";
-		password = "P@ssword888888";
+		password = "";
 		
 		// login
 		sf.login(username, password + securityToken);
@@ -197,7 +197,7 @@ public class FileHandler : MonoBehaviour {
 			yield return new WaitForSeconds(0.1f);
 		
 		// Query all Pano records so that we can get their attachments later.
-		sf.query("SELECT id FROM overpower__Panorama__c");
+		sf.query("SELECT id FROM Panorama__c");
 		
 		// wait for query results
 		while(sf.response == null)
