@@ -8,6 +8,7 @@ When you first build the Unity code and create the Xcode project, be sure to fol
 
 1. Add the CoreText and Photos framework as well as libc++.dylib.
 2. Go to File -> Add File to Unity-iPhone and select the resources.bundle file in [your Unity project]/Assets/Plugins/iOS folder.
+3. Remove the UILaunchStoryboardName~iphone Custom iOS Target Properties entry under Info on your project’s target if not running Unity Pro.
 
 The base code for this project was taken with permission from BubblePix (www.bubblepix.com) and can be found here: https://github.com/fluidpixel/BubblePixVR
 
